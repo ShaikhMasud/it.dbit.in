@@ -2,17 +2,12 @@
 <html lang="en">
 
 <head>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSDSNMD822"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-PSDSNMD822');
   </script>
 
@@ -29,64 +24,91 @@
   <title>Academic</title>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+  </script>
   <script defer src="../nav.js"></script>
   <script src="/Components/Navbar.js" defer></script>
   <!-- Favicon logo -->
   <link rel="icon" href="/assets/logo.ico" type="image/x-icon">
+
+  <style>
+  /* Odd rows → green links */
+  tbody tr:nth-child(odd) a {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* Even rows → white links */
+  tbody tr:nth-child(even) a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+   tbody tr:nth-child(odd) {
+      color: green;
+    }
+
+    tbody tr:nth-child(even) {
+      color: black;
+    }
+</style>
+
 </head>
 
 <body class="bg-color">
   <div id="navbar"></div>
-  <!-- <section class ="breadcrumb-classic">
-    <div class="shell">
-        <ul class ="list-breadcrumb">
-          <li><a href="/index.html">Home</a></li>
-          <li ::before > 
-            <a href="/academics/academic-calendar.html">ACADEMICS calendar</a></li>
-        </ul>
-    </div>
-  </section> -->
+
   <main class="container">
     <div class="row justify-content-center p-5">
       <div>
-        <h2 class="text-center">Academic Calender</h2><br>
+        <h2 class="text-center">Academic Calendar</h2><br>
       </div>
       <div class="border rounded bg-light main-head">
         <table class="table text-center">
           <thead class="table-dark">
             <tr>
               <th>Year</th>
-              <th>Timetable</th>
+              <th>Even Semester</th>
+              <th>Odd Semester</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-color">
-              <th>2019-2020 (Even Semester)</th>
-              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2019_20.pdf">View Calender</a>
-              </td>
+            <tr>
+              <th>2024-2025</th>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2019_20.pdf">View Calendar</a></td>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2019_20.pdf">View Calendar</a></td>
             </tr>
             <tr>
-              <!-- 
-              <th>2019-2020 (Odd Semester)</th>
-              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2019_20.pdf">View Calender</a>
-              </td>
-            </tr>
-            <tr class="bg-color">
-              <th>2018-2019 (Even Semester)</th>
-              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2018_19.pdf">View Calender</a>
-              </td>
+              <th>2023-2024</th>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2020_21.pdf">View Calendar</a></td>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2020_21.pdf">View Calendar</a></td>
             </tr>
             <tr>
-              <th>2018-2019 (Odd Semester)</th>
-              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2018_19.pdf">View Calender</a>
-              </td>
-            </tr> -->
+              <th>2022-2023</th>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2021_22.pdf">View Calendar</a></td>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2021_22.pdf">View Calendar</a></td>
+            </tr>
+            <tr>
+              <th>2021-2022</th>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2022_23.pdf">View Calendar</a></td>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2022_23.pdf">View Calendar</a></td>
+            </tr>
+             <tr>
+              <th>2020-2021</th>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2022_23.pdf">View Calendar</a></td>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2022_23.pdf">View Calendar</a></td>
+            </tr>
+             <tr>
+              <th>2019-2020</th>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Even_2022_23.pdf">View Calendar</a></td>
+              <td><a class="links" href="/assets/pdf/Academic_calender/IT_Calendar_Odd_2022_23.pdf">View Calendar</a></td>
+            </tr>
           </tbody>
         </table>
       </div>
     </div>
   </main>
+
   <div style="padding: 2rem;"></div>
 
   <!-- Footer -->
